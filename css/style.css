@@ -62,11 +62,15 @@ body {
     color: white;
     margin-bottom: 450px;
     padding: 25px;
+    animation: init 1s forwards;
+}
+
+.descricao {
+    margin-top: 10px;
 }
 
 .seta {
     position: absolute;
-    transform: rotate(-90deg);
     left: 48%;
     width: 40px; 
     bottom: 60px;
@@ -75,10 +79,21 @@ body {
 
 @keyframes movimento-seta {
     0% {
-        bottom:30px ;
+        transform: translateY(-50%) rotate(-90deg);
     }
     100% {
-        bottom: 70px;
+        transform: translateY(0) rotate(-90deg);
+    }
+}
+
+@keyframes init {
+    0% {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -115,3 +130,81 @@ body {
 .habilidade:hover {
     filter: grayscale(0);
 }
+
+
+    /* Projetos */
+
+.projetos {
+    margin-top: 20px;
+    width: 100%;
+    height: 910px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto {
+    width:85%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    transition: 1s;
+    margin: auto auto;
+    background-color: darkgray;
+    
+}
+
+.content-project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-bottom: 15px ;
+}
+
+.projeto:hover {
+    animation: margin 2s;
+    animation-fill-mode: forwards;
+}
+
+.content-project h2  {
+    font-weight: 800;
+    margin: 5px;
+    color: whitesmoke;    
+}
+
+.content-project h4 {
+    font-weight: 400;
+    margin: 5px;
+    color: whitesmoke;
+}
+
+.content-project a {
+    padding: 20px 15px;
+    border-radius: 3px;
+    width: 120px;
+    margin: 5px;
+    background-color: cadetblue;
+}
+
+.projeto span {
+    width: 150px;
+    padding: 15px 15px;
+    color: aliceblue;
+    margin-right: 15px;
+}
+
+@keyframes margin {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+        background: rgb(88, 61, 61);
+        background-size: 100% 100%;
+    }
+}
+
+
