@@ -61,7 +61,7 @@ body {
     font-size: 25px;
     color: white;
     margin-bottom: 450px;
-    padding: 15px;
+    padding: 25px;
 }
 
 .seta {
@@ -88,19 +88,20 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 35px;
     height: 350px;
 }
 
 .habilidade-box {
     width: 250px;
     height: 250px;
-    border: 1px cadetblue solid;
-    box-shadow: 10px 10px 10px #332a2ac5;
+    box-shadow: 5px 5px 15px #332a2ac5;
 }
 
 .habilidade-box p {
     text-align: center;
+    font-family: 'Ubuntu';
+    font-weight: 1000;
 }
 
 .habilidade{
